@@ -915,9 +915,9 @@
                 <rdfs:comment>Grade:A</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#FreeWindRestaurantandBar">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#KandyRestaurants"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#TrincomaleeRestaurants"/>
                 <rdfs:label>Free Wind Restaurant and Bar</rdfs:label>
-                <rdfs:comment>Address:No 1285, Kandy Road, Palaiyoothu, Trinco Malee</rdfs:comment>
+                <rdfs:comment>Address:No 1285, Kandy Road, Palaiyoothu, Trincomalee</rdfs:comment>
                 <rdfs:comment>Grade:A</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#EdwinRestaurant">
@@ -927,7 +927,7 @@
                 <rdfs:comment>Grade:B</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#DakshinaRestaurant">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#KandyRestaurants"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#Restaurants"/>
                 <rdfs:label>Dakshina Restaurant</rdfs:label>
                 <rdfs:comment>Address:154/A, Kandy Rd, Dalugama,Kelaniya</rdfs:comment>
                 <rdfs:comment>Grade:B</rdfs:comment>
@@ -2223,7 +2223,7 @@
                 <rdfs:comment>Grade:A</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#PeninsulaHolidayRestaurant">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaKandyRestaurants"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaRestaurants"/>
                 <rdfs:label>Peninsula Holiday Restaurant</rdfs:label>
                 <rdfs:comment>Address:No. 281, Kandy Road, Jaffna</rdfs:comment>
                 <rdfs:comment>Grade:A</rdfs:comment>
@@ -6429,12 +6429,6 @@
                 <rdfs:comment>Type:Classified Hotels( 1-5 Star)</rdfs:comment> 
                 <rdfs:comment>Address:No. 89, Upper Lake Road, Havelock Drive, Nuwara Eliya.</rdfs:comment>
         </owl:Class>
-        <owl:Class  rdf:about="http://example.com/LocationCity#SenaniRestaurant">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#KandyAccommodation"/>
-                <rdfs:label>Senani Restaurant</rdfs:label>
-                <rdfs:comment>Type:Classified Hotels( 1-5 Star)</rdfs:comment> 
-                <rdfs:comment>Address:No 167, Rajapihilla Mawatha, Kandy.</rdfs:comment>
-        </owl:Class>
         <owl:Class  rdf:about="http://example.com/LocationCity#GlobalTowersHotel">
                 <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#ColomboAccommodation"/>
                 <rdfs:label>Global Towers Hotel</rdfs:label>
@@ -7792,13 +7786,13 @@
                 <rdfs:comment>Address:No. 34/4, De Seram Road, Mount Laviniya</rdfs:comment>
         </owl:Class>
         <owl:Class  rdf:about="http://example.com/LocationCity#GreenInnRestaurant">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaKandyAccommodation"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaAccommodation"/>
                 <rdfs:label>Green Inn Restaurant</rdfs:label>
                 <rdfs:comment>Type:Guest Houses</rdfs:comment> 
                 <rdfs:comment>Address:No.60, Kandy Road, Chundikuli, Jaffna</rdfs:comment>
         </owl:Class>
         <owl:Class  rdf:about="http://example.com/LocationCity#NewGreenInnRestaurant">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaKandyAccommodation"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaAccommodation"/>
                 <rdfs:label>New Green Inn Restaurant</rdfs:label>
                 <rdfs:comment>Type:Guest Houses</rdfs:comment> 
                 <rdfs:comment>Address:No.258/3, Kandy Road, Jaffna</rdfs:comment>
@@ -8314,7 +8308,7 @@
                 <rdfs:comment>Address:No.103,Doctor N.M Perera Mawatha,Borella,Colombo 08.</rdfs:comment>
         </owl:Class>
         <owl:Class  rdf:about="http://example.com/LocationCity#BastianHotel">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaKandyAccommodation"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaAccommodation"/>
                 <rdfs:label>Bastian Hotel</rdfs:label>
                 <rdfs:comment>Type:Guest Houses</rdfs:comment> 
                 <rdfs:comment>Address:37/11,Kandy Road,Jaffna</rdfs:comment>
@@ -16737,9 +16731,9 @@
                 <rdfs:comment>Address:No.261, Diulagahawatta, Tudella, Jaela</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#RichardTravelsAndTours(Pvt)Ltd">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#GalleTravelAgents"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#BentotaTravelAgents"/>
                 <rdfs:label>Richard Travels And Tours(Pvt)Ltd</rdfs:label>
-                <rdfs:comment>Address:No 17 A Galle Road, Angagoda Benthota</rdfs:comment>
+                <rdfs:comment>Address:No 17 A Galle Road, Angagoda, Bentota</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#SensesHoliday(Pvt)Ltd">
                 <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#ColomboTravelAgents"/>
@@ -20352,7 +20346,7 @@
                 <rdfs:comment>Address:No:282, Level 1, Liberty Arcade, R.A. De Mel Mawatha, Colombo 03</rdfs:comment>
         </owl:Class>
         <owl:Class rdf:about="http://example.com/LocationCity#ValvaiTourism(Pvt)Ltd">
-                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaKandyTravelAgents"/>
+                <rdfs:subClassOf rdf:resource="http://example.com/LocationCity#JaffnaTravelAgents"/>
                 <rdfs:label>Valvai Tourism (Pvt) Ltd</rdfs:label>
                 <rdfs:comment>Address:133, Kandy Road, Jaffna</rdfs:comment>
         </owl:Class>
