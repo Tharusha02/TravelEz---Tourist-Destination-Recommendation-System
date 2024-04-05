@@ -1,0 +1,16 @@
+{
+    "destinations": [
+        {
+            "name": "Colombo",
+            "description": "Capital city with a mix of modern and colonial architecture.",
+            "rating": 4.5
+        },
+        {
+            "name": "Kandy",
+            "description": "Historical city surrounded by mountains and tea plantations.",
+            "rating": 4.2
+        }
+        
+    ]
+}
+
