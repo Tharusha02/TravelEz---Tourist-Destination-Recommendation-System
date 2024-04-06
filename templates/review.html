@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" href="/static/review.css">
+    <link rel="stylesheet" href="/static/dropdown_profile.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>feedback page</title>
+</head>
+
+<body>
+
+    <section class="review-header">
+        <header>
+            <nav>
+                <!-- to add the logo-->
+                <a href="/"><img src="/static/logo1.png" class="logo"></a> 
+                    <ul>
+                        <li><a href="/aboutUs">ABOUT US</a></li>
+                        <li><a href="/search">EXPLORE</a></li>  
+                        <li><a href="/review">REVIEWS</a></li>                      
+                    </ul>
+                <img src="/static/images/user.png" class="user-pic" onclick="toggleMenu()">
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/static/images/user.png">
+                            <h3>{{user1}} {{user2}}</h3>
+                        </div>
+                        <hr>
+                        <a href="/profileEdit" class="sub-menu-link">
+                            <img src="/static/images/setting.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="/logout" class="sub-menu-link">
+                            <img src="/static/images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="wrapper">
+                <h3>SHARE YOUR FEEDBACK</h3>
+                <form method="POST" action="{{ url_for('review') }}">
+                    <select name="destination">
+                        {% for destination in destinations %}
+                        <option value="{{ destination[0] }}">{{ destination[0] }}</option>
+                        {% endfor %}
+                    </select>
+                    <textarea name="opinion" cols="30" rows="8" placeholder="Your opinion..."></textarea>
+                    <div class="btn-group">
+                        <button type="submit" class="btn submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="reviews">
+                {% for review in reviews %}
+                <div class="card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <div class="card__details">
+                        <h5>{{ review[1] }}</h5> <!-- Display destination name -->
+                        <p>{{ review[2][:130] }}{% if review[2]|length > 130 %}...{% endif %}</p> <!-- Display review -->
+                        <h4>- {{ review[0] }}</h4> <!-- Display username -->
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        
+        </div>
+        
+          
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/"><img src="/static/logo1.png" alt="Logo"></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/aboutUs">ABOUT US</a></li>
+                    <li><a href="/search">EXPLORE</a></li>
+                    <li><a href="/review">REVIEWS</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>follow us</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  	 				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  	 				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  	 				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelEz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu")
+        }
+
+    </script>
+
+
+</body>
+
+</html>

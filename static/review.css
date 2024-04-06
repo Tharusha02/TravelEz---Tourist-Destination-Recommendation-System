@@ -1,0 +1,204 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+  header{
+        background: rgba(123, 150, 225, 0.2);
+        width: 100%;
+        padding: 10px;
+        left: 0;
+        top: 0;
+  }
+  
+  .review-header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: url(review-background.png);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  nav{
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo{
+    width: 180px; 
+    margin-top: 5px;
+  }
+  
+  nav ul{
+    width: 100%;
+    text-align: right;
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+  }
+  
+  nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #161128;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.wrapper {
+	padding: 2rem;
+	max-width: 656px;
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 110px 20px 20px 100px;
+
+}
+.wrapper h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+  font-family: 'Protest Riot', sans-serif;
+}
+
+select {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+select option {
+  padding: 8px;
+  border: none;
+}
+
+select option:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+textarea {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: .5rem;
+  font-size: 20px;
+}
+.btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	align-items: center;
+}
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.btn-group .btn.submit {
+	background: #4383FF;
+	color: #ffffff;
+}
+.btn-group .btn.submit:hover {
+	background: #5987e2;
+}
+
+.reviews {
+  flex: 0 0 45%;
+  margin-right: 50px;
+  margin-top: 10px
+}
+
+.card {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 20px;
+  height: 170px;
+}
+
+.card span i {
+  font-size: 2rem;
+  color: #4d85f5;
+}
+.card h5 {
+  font-style: italic;
+  color: #333333;;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.card p {
+  font-style: italic;
+  color: #333333;;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.card__details h4 {
+  text-align: right;
+  color: #4643ff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+

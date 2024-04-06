@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/EditPofile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Edit profile page</title>
+</head>
+<body>
+
+    <section class="EditProfile-header">
+        <div class="container">
+            <div class="left-box">
+                <img src="/static/images/user.png" class="User-Photo">
+                <h3>{{username}}</h3>
+                <p>{{email}}</p>
+            </div>
+            <div class="right-box">
+                <div>
+                    <div class="alert-warning {{ 'success' if message.startswith('Profile updated successfully.') else 'error' }}">{{ message }}</div>
+                    <a href="/search" class="back-button">
+                        <img src="/static/images/back.png">
+                        <p>Back</p>
+                    </a>
+                </div>
+                <form id="updateForm" action="" method="POST" class="form">
+                    <div class="tag"><h3>Personal Details:</h3></div>
+                    <div class="edit-field">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="firstName" value="{{ first_name }}">
+                    </div>
+                    <div class="edit-field">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="lastName" value="{{ last_name }}">
+                    </div>
+                    <div class="edit-field">
+                        <label for="phone">Phone No:</label>
+                        <input type="text" id="phoneNo" name="phone" value="{{ phone }}">
+                    </div>
+                    <div class="tag"><h3>Address:</h3></div>
+                    <div class="edit-field">
+                        <label for="AddressLine1">Address Line 1</label>
+                        <input type="text" id="AddressLine1" name="AddressLine1" value="{{ address_line1 }}">
+                    </div>
+                    <div class="edit-field">
+                        <label for="AddressLine2">Address Line 2</label>
+                        <input type="text" id="AddressLine2" name="AddressLine2" value="{{ address_line2 }}">
+                    </div>
+                    <div class="edit-field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" value="{{ city }}">
+                    </div>
+                    <div class="edit-field">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" value="{{ country }}">
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
