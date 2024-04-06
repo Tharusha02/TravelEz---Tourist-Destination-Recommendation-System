@@ -6,6 +6,7 @@ import re
 g = Graph()
 g.parse("onto.rdf") 
 
+
 # Define the namespace
 ns = Namespace("http://example.com/LocationCity#")
 

@@ -5,6 +5,8 @@
         xmlns:dc = "http://purl.org/dc/elements/1.1/"
         xmlns:City = "http://example.com/LocationCity#">
 
+
+
         <!-- OWL Header -->
         <owl:Ontology rdf:about ="http://example.com/LocationCity">
         <dc:title>Location City Ontology</dc:title>
