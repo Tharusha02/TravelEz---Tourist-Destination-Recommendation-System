@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <link rel="stylesheet" href="/static/search.css">
+    <link rel="stylesheet" href="/static/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b45ee1c97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Searching page</title>
+</head>
+
+<body>
+
+    <section class="search-header">
+        <header>
+            <nav>
+                <!-- to add the logo-->
+                <a href="/"><img src="/static/logo1.png" class="logo"></a> 
+                    <ul>
+                        <li><a href="/aboutUs">ABOUT US</a></li>
+                        <li><a href="/search">EXPLORE</a></li> 
+                        <li><a href="/review">REVIEWS</a></li>                       
+                    </ul>
+                <img src="/static/images/user.png" class="user-pic" onclick="toggleMenu()">
+
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="/static/images/user.png">
+                            <h3>{{user1}} {{user2}}</h3>
+                        </div>
+                        <hr>
+                        <a href="/profileEdit" class="sub-menu-link">
+                            <img src="/static/images/setting.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="/logout" class="sub-menu-link">
+                            <img src="/static/images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+
+
+            </nav>
+        </header>
+        <div class="container">
+            <div class="alert-warning">{{ error_message }}</div>
+            <div class="search-box">
+                <form method="POST" action="{{ url_for('search') }}" class="row" id="searchForm">
+                <!-- <form method="POST" action="http://localhost:5000/serach" class="row"> -->
+                    <!-- <textarea name="city" cols="30" rows="5" placeholder="Provide Your Preferences"></textarea> -->
+                    <textarea type="text" name="preference" id="city" cols="30" rows="5" placeholder="Enter Your preference"></textarea>
+                    <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            
+            <div>
+                <div class="view_destination">
+                    <img src="/static/search/destination.jpg" alt="Destinations">
+                    <div class="text">
+                        <h2>{{ location }}</h2>
+                    </div>
+                </div>
+            </div>
+        
+    
+            <div class="cards-container">
+                    <div class="card restaurant">
+                        <h4>Restaurants</h4>
+                        <hr>
+                        <img src="/static/search/restaurants.jpg" alt="Restaurants">
+                        <h2>Restaurants</h2>
+                        <p>Find delicious dining options near your destination.</p>
+                        <button class="prev-btn">Previous</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                    <div class="card travel-agent">
+                        <h4>Travel Agents</h4>
+                        <hr>
+                        <img src="/static/search/agents.jpg" alt="Travel agents">
+                        <h2>Travel Agents</h2>
+                        <p>Connect with experts to plan your perfect trip.</p>
+                        <br>
+                        <button class="prev-btn">Previous</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                    <div class="card accommodation">
+                        <h4>Accommodation</h4>
+                        <hr>
+                        <img src="/static/search/accommodation.jpg" alt="Accommodation">
+                        <h2>Accommodation</h2>
+                        <p>Discover comfortable stays for your travel needs.</p>
+                        <button class="prev-btn">Previous</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                
+            </div>
+        </form>
+        </div>   
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/"><img src="/static/logo1.png" alt="Logo"></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/aboutUs">ABOUT US</a></li>
+                    <li><a href="/search">EXPLORE</a></li>
+                    <li><a href="/review">REVIEWS</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>follow us</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+  	 				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  	 				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  	 				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelEz. All rights reserved.</p>
+        </div>
+    </footer>
+    
+        <script src="/static/search.js">
+            
+            
+        </script>
+    </body>
+    </html>

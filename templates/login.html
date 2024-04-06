@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <link rel="stylesheet" href="/static/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <title>Login Page</title>
+</head>
+
+<body>
+    <section class="login-header">
+        <header>
+            <nav>
+                <!-- to add the logo-->
+                <a href="/"><img src="/static/logo1.png"></a>
+                
+            </nav>
+        </header>
+        <div class="alert-warning">{{ message }}</div>
+        <div class="container">
+            <div class="content">
+                <form method="POST" action="{{ url_for('login') }}">
+                    <p>Email: </p>
+                    <input type="email" placeholder="Email" name="email" class="input-field" required>
+                    <br><br>
+                    <p>Password: </p>
+                    <input type="password" placeholder="Password" name="password" class="input-field" required>
+                    <div class="forgot-ps">
+                        <a href="Forgot Password">Forgot Password ?</a>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Login" class="login-btn">
+                    </div>
+                    
+                </form>
+            </div>
+          </div>
+        
+    </section>
+</body>
+
+</html>

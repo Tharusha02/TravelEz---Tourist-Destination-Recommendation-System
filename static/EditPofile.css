@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+  
+
+.EditProfile-header {
+    min-height: 100vh;
+    width: 100%;
+    background: url(profile-edit-background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 10px;
+}
+
+.left-box {
+    padding: 20px;
+    padding-top: 50px;
+    color: #464545;
+    height: 220px;
+    background-color: #ffffff;
+    margin: 10px 150px 10px 10px;
+    border-radius: 10px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.User-Photo {
+    width: 100px; 
+}
+
+.left-box h3{
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.right-box {
+    width: calc(100% - 300px); 
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tag {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.back-button{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.back-button p{
+    width: 100%;
+}
+
+.back-button img{
+    width: 30px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.edit-field {
+    width: calc(50% - 10px); 
+    margin-bottom: 20px;
+}
+
+.edit-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.tag{
+    margin-bottom: 10px;
+}
+
+.btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	align-items: center;
+}
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.btn-group .btn.submit {
+	background: #84adff;
+	color: #FFF;
+}
+.btn-group .btn.submit:hover {
+	background: #b0caff;
+}
+
+.alert-warning{
+    font-size: 13px;
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: 54%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+
+
+

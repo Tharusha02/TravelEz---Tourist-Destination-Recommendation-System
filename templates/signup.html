@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <link rel="stylesheet" href="/static/signup.css">
+    <script src="/static/signup.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
+    <title>SignUp Page</title>
+</head>
+
+<body>
+    <section class="multiplePageSignup-header">
+      <header>
+        <nav>
+            <!-- to add the logo-->
+            <a href="/"><img src="/static/logo1.png"></a>
+            
+        </nav>
+    </header>
+        <div class="alert-warning">{{ message }}</div>
+        <div class="container">
+        <form method="POST" action="/signup" class="form">
+            <h1 class="text-center">Registration Form</h1>
+            <!-- Progress bar -->
+            <div class="progressbar">
+              <div class="progress" id="progress"></div>
+              
+              <div class="progress-step progress-step-active"></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+              <div class="progress-step" ></div>
+            </div>
+      
+            <!-- Steps -->
+            <div class="form-step form-step-active">
+              <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" />
+              </div>
+              <div class="input-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" />
+              </div>
+              <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+              </div>
+              <div class="account-have"><p>Already have an account ? <a href="/login"> Login</a></p></div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" name="Username" id="Username" />
+              </div>
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="input-group">
+                <label for="phone">Phone No</label>
+                <input type="number" name="phone" id="phone" />
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <a href="#" class="btn btn-next">Next</a>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="AddressLine1">Address Line 1</label>
+                <input type="text" name="AddressLine1" id="AddressLine1" />
+              </div>
+              <div class="input-group">
+                <label for="AddressLine2">Address Line 2</label>
+                <input type="text" name="AddressLine2" id="AddressLine2" />
+              </div>
+              <div class="input-group">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" />
+              </div>
+              <div class="input-group">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" />
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <a href="#" class="btn btn-next">Next</a>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" />
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Previous</a>
+                <input type="submit" value="Register" class="btn" />
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        
+    </section>
+</body>
+
+</html>
